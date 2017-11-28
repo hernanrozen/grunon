@@ -5,7 +5,7 @@ angular
     $scope.showSpinner = true;
 		$scope.cart = [];
 		$scope.cartTotal = 0;
-		$scope.lab2 = myService.get();
+		$scope.beerList = myService.get();
 		
 		
 		$scope.callToAddToProductList = function(currObj){

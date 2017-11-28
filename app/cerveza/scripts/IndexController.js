@@ -4,7 +4,7 @@ angular
     $scope.cervezas = null;
     $scope.showSpinner = true;
 		
-		$scope.lab2 = myService.get();
+		$scope.beerList = myService.get();
 
     Cerveza.all().whenChanged( function (cervezas) {
         $scope.$apply( function () {
