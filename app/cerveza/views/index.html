@@ -9,7 +9,7 @@
   <div ng-hide="showSpinner">
     <ul class="list" ng-hide="cervezas.length == 0">
 
-      <super-navigate location="cerveza#show" data-params-id="{{ birra.id }}" ng-repeat="cerveza in cervezas">
+      <super-navigate location="cerveza#show" data-params-id="{{ cerveza.id }}" ng-repeat="cerveza in cervezas">
         <li class="item item-icon-right">
           <span ng-bind="cerveza.fields['Estilo']"></span>
           <i class="icon super-ios-arrow-right"></i>
@@ -21,6 +21,7 @@
     <h4 ng-show="cervezas.length == 0" class="assertive padding">
       No cervezas found. Create one?
 		</h4>
+		{{lab2}}
 		
 
     <super-modal-show location="cerveza#new">

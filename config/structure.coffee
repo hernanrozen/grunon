@@ -17,10 +17,15 @@ module.exports =
  
   ]
 
-  # rootView:
-  #   location: "index"
+rootView:
+   location: "index"
 
   preloads: [
+    {
+      title: "Birra"
+      id: "cerveza"
+      location: "cerveza#index" # Supersonic module#view type navigation
+    }
   ]
 
   # drawers:

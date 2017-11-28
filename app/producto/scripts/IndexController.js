@@ -1,10 +1,11 @@
 angular
   .module('producto')
-  .controller("IndexController", function ($scope, Producto, supersonic) {
+  .controller("IndexController", function ($scope, Producto, supersonic, myService) {
     $scope.productos = null;
     $scope.showSpinner = true;
 		$scope.cart = [];
-		$scope.cartTotal = 0;	
+		$scope.cartTotal = 0;
+		$scope.lab2 = myService.get();
 		
 		
 		$scope.callToAddToProductList = function(currObj){
