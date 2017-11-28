@@ -1,0 +1,46 @@
+<div ng-controller="IndexController">
+  <super-navbar>
+    <super-navbar-title>
+      Producto Index
+    </super-navbar-title>
+  </super-navbar>
+
+  <div ng-show="showSpinner" ng-include="'_spinner.html'"></div>
+  <div ng-hide="showSpinner">
+		
+		<div ng-hide="productos.length == 0">
+			<div class="select-button" data-params-id="{{ producto.id }}" ng-repeat="producto in productos" ng-click="addToCart(producto)">
+					<h2 ng-bind="producto.fields['Tipo']"></h2>
+					<h3 ng-bind="producto.fields['Precio']"></h3>
+					<p><i class="icon super-ios-plus"></i></p>
+			</div>
+		</div>
+		<div class="cart list list-inset">
+
+		  <div class="item item-divider">
+		    COMPRA
+		  </div>
+			<label class="item item-input item-select" ng-repeat="product in cart">
+			    <div class="input-label"><b>{{product.name.fields.Tipo}}</b><br>$ {{product.name.fields.Precio}}</div>
+			    <select ng-repeat="birra in birras">
+			      <option ng-bind="birra.fields['Estilo']"></option>
+			    </select>
+			</label>
+
+		<h2>Total: $ {{cartTotal}}</h2>
+
+    </p>
+		<br><br>
+		</div>
+    <h4 ng-show="productos.length == 0" class="assertive padding">
+      No productos found. Create one?
+    </h4>
+		
+
+
+    <super-modal-show location="producto#new">
+      <button class="button button-full button-positive">
+        Create a new producto
+      </button>
+    </super-modal-show>
+</div>

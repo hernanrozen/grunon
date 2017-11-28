@@ -1,0 +1,23 @@
+.supersonic-navbar-mock {
+  background-color: #00B5FF !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.select-button{
+	background-color: light-grey;
+	border: 1px solid grey;
+	padding: 10px;
+	margin: 1%;
+	text-align: center;
+	width: 31%;
+	float: left;
+}
+
+
+.cart{
+	padding-top: 40px;
+	padding-left: 5px;
+	padding-right: 30px;	
+	width: 100%;
+}
