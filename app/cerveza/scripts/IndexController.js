@@ -3,7 +3,6 @@ angular
   .controller("IndexController", function ($scope, Cerveza, supersonic) {
     $scope.cervezas = null;
     $scope.showSpinner = true;
-		
 
     Cerveza.all().whenChanged( function (cervezas) {
         $scope.$apply( function () {
@@ -12,3 +11,6 @@ angular
         });
     });
   });
+	
+	
+	

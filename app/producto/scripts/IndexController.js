@@ -5,8 +5,6 @@ angular
     $scope.showSpinner = true;
 		$scope.cart = [];
 		$scope.cartTotal = 0;	
-
-
 		
 		
 		$scope.callToAddToProductList = function(currObj){

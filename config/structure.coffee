@@ -5,7 +5,7 @@ module.exports =
   # See styling options for tabs and other native components in app/common/native-styles/ios.css or app/common/native-styles/android.css
   tabs: [
     {
-      title: "Index"
+      title: "Nueva Orden"
       id: "index"
       location: "producto#index" # Supersonic module#view type navigation
     }
@@ -18,7 +18,7 @@ module.exports =
   ]
 
   # rootView:
-  #   location: "producto#index"
+  #   location: "index"
 
   preloads: [
   ]
