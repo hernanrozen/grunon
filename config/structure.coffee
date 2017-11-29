@@ -20,9 +20,8 @@ module.exports =
 rootView:
    location: "index"
 
-  preloads: [
+preloads: [
     {
-      title: "Birra"
       id: "cerveza"
       location: "cerveza#index" # Supersonic module#view type navigation
     }

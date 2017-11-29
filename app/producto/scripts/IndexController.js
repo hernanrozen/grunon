@@ -1,11 +1,10 @@
 angular
   .module('producto')
-  .controller("IndexController", function ($scope, Producto, supersonic, myService) {
+  .controller("IndexController", function ($scope, Producto, supersonic, myService2, myServiceTest) {
     $scope.productos = null;
     $scope.showSpinner = true;
 		$scope.cart = [];
 		$scope.cartTotal = 0;
-		$scope.beerList = myService.get();
 		
 		
 		$scope.callToAddToProductList = function(currObj){
@@ -17,6 +16,9 @@ angular
         $scope.$apply( function () {
           $scope.productos = productos;
           $scope.showSpinner = false;
+					$scope.beerList = myService2.get();
+					$scope.test = myServiceTest.set(productos);
+					$scope.test = myServiceTest.get();
         });
     });
 		

@@ -24,5 +24,13 @@
 	
 
 -------------		
-
-{{beerList}}
+     <div ng-repeat="beer in beers2">
+       <li class="item item-icon-right">
+         <span ng-bind="beer.fields['Estilo']"></span>
+         <i class="icon super-ios-arrow-right"></i>
+       </li>
+     </div>
+		 
+		 <h1>{{test}}</h1>
+		
+</div>
